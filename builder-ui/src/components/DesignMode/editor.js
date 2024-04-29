@@ -12,6 +12,15 @@ function Editor() {
       style: Temp1CSS,
       storageManager: false,
       plugins: ["grapesjs-tailwind"],
+      blockManager: {
+        blocks: [
+          {
+            id: "temp-1",
+            label: "Template 1",
+            content: Temp1,
+          },
+        ],
+      },
     });
 
     // add the components to the editor
